@@ -1,9 +1,34 @@
-<div class="container">
-    <h3> {{ viewTitle }} </h3>
-    <form>
-        <div class="mb-3">
-            <label for="inputAuthor">Author</label>
-            <input type="text" class="form-control" id="inputAuthor" name="author" placeholder="author">
+<div class="container d-flex justify-content-center">
+    <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-5 card my-5 border-primary">
+        <div class="card-header bg-primary text-white">
+            <h3> {{ viewTitle }} </h3>
         </div>
-    </form>
+        <form class="card-body">
+            <div class="mb-3">
+                <label for="inputAuthor">Author</label>
+                <input type="text" class="form-control" id="inputAuthor" name="author" placeholder="author">
+            </div>
+            <div class="mb-3">
+                <label for="inputTitle">Title</label>
+                <input type="text" class="form-control" id="inputTitle" name="title" placeholder="title">
+            </div>
+            <div class="d-flex justify-content-between align-items-end">
+                <div class="mb-3 col-3">
+                    <label for="inputPrice">Price</label>
+                    <input type="text" class="form-control" id="inputPrice" name="price" placeholder="price">
+                </div>
+                <button type="submit" class="btn btn-primary mb-3">
+                    Submit
+                    <svg width="1.2em" height="1.2em" viewBox="0 0 14 14" class="ml-1 mb-1 bi bi-box-arrow-in-up" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M4.646 7.854a.5.5 0 0 0 .708 0L8 5.207l2.646 2.647a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 0 0 0 .708z" />
+                        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-1 0v9a.5.5 0 0 0 .5.5z" />
+                        <path fill-rule="evenodd"
+                            d="M1.5 2.5A1.5 1.5 0 0 1 3 1h10a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 1 13 12h-1.5a.5.5 0 0 1 0-1H13a.5.5 0 0 0 .5-.5v-8A.5.5 0 0 0 13 2H3a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h1.5a.5.5 0 0 1 0 1H3a1.5 1.5 0 0 1-1.5-1.5v-8z" />
+                    </svg>
+                </button>
+            </div>
+        </form>
+    </div>
 </div>

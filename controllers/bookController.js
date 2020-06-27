@@ -2,7 +2,7 @@ const express = require('express');
 var router = express.Router();
 
 router.get('/', (req, res) => {
-    res.json('pina');
+    res.render('book/addOrEdit', {viewTitle: 'Insert Book'});
 })
 
 module.exports = router;

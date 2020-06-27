@@ -15,5 +15,5 @@ app.set('view engine', 'hbs');
 app.listen(3000, () => {
     console.log('Az Express szerver a következő porton fut: 3000');
 });
-
+app.use('/', express.static(__dirname));
 app.use('/book', bookController);
