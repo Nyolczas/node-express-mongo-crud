@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="card my-5 bg-light">
+        <table class="table table-stiped">
+            <thead>
+                <tr>
+                    <th>Author</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each list}}
+                <tr>
+                    <td>{{this.author}}</td>
+                    <td>{{this.title}}</td>
+                    <td>{{this.price}}</td>
+                    <td>
+                        <a class="btn btn-small btn-info"><img src="/node_modules/bootstrap-icons/icons/pencil.svg"
+                                alt="edit" height="12" width="12" class="mb-2"></a>
+                        <a class="btn btn-small btn-danger"><img src="/node_modules/bootstrap-icons/icons/trash.svg"
+                                alt="delete" height="12" width="12" class="mb-2"></a>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -12,4 +12,4 @@ var bookSchema = new mongoose.Schema({
     }
 });
 
-mongoose.model('Boook', bookSchema);
+mongoose.model('Book', bookSchema);
